@@ -4,7 +4,8 @@
     "type": "library",
     "require": {
         "php": "^8.3",
-        "potter/session-interface": "dev-main"
+        "potter/session-interface": "dev-main",
+        "potter/container-interface": "dev-main"
     },
     "license": "MIT",
     "autoload": {
