@@ -1,0 +1,2 @@
+# ApplicationTrait
+PHP Application Trait
