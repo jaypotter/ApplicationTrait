@@ -13,5 +13,15 @@ trait ApplicationTrait
         return php_sapi_name() == 'cli';
     }
     
+    final public function start(): void
+    {
+        if ($this->hasSession()) {
+            $this->startSession();
+        }
+    }
+    
     abstract public function getContainer(): ContainerInterface;
+    
+    abstract public function hasSession(): bool;
+    abstract public function startSession(): void;
 }
