@@ -4,10 +4,7 @@ declare(strict_types=1);
 
 namespace Potter\Application;
 
-use \Potter\{
-    Container\ContainerInterface,
-    Session\SessionInterface
-};
+use \Psr\Container\ContainerInterface;
 
 trait ApplicationTrait 
 {
