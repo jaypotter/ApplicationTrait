@@ -18,9 +18,15 @@ trait ApplicationTrait
         if ($this->hasSession()) {
             $this->startSession();
         }
+        if ($this->hasOutputBuffer()) {
+            $this->startOutputBuffer();
+        }
     }
     
     abstract public function getContainer(): ContainerInterface;
+    
+    abstract public function hasOutputBuffer(): bool;
+    abstract public function startOutputBuffer(): void;
     
     abstract public function hasSession(): bool;
     abstract public function startSession(): void;
