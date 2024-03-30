@@ -11,11 +11,6 @@ use \Potter\{
 
 trait ApplicationTrait 
 {
-    final public function getSession(): SessionInterface
-    {
-        return $this->getContainer()->get('session');
-    }
-    
     final public function runningInConsole(): bool
     {
         return php_sapi_name() == 'cli';
